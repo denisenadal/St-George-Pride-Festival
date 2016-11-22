@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>St. George Pride Festival</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/7f62cdf98b.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css" type="text/css">
 </head>
-<body>
+<body id="home">
     <header>
-        <div class="col-12" id="action-nav">
-            <ul>
-                <li><a href="get-involved.html#volunteer">Volunteer</a></li>
-                <li><a href="get-involved.html#vendor">Vendors</a></li>
-                <li><a href="get-involved.html#donate">Donate</a></li>
+        <div class="inner-wrap">
+            <h1 class="yellow-txt">St George Pride<br> Festival 2017</h1>
+            <h2 class="purple-txt">Saturday<br>June 10,2017<br>Vernon Worthen Park<br>St. George, Utah</h2>
         </div>
     </header>
-    <nav id="main_nav">
-        <svg id="logo"></svg>
-        <ul id="nav_links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="festival.html">Festival</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav id="main_nav" class="magenta">
+        <a id="logo" href="index.html"><img src="imgs/logo.png" alt="st george pride festival logo" width="100" height="100"></a>
+        <ul id="nav_links" class="flat inner-wrap">
+            <li class="red" style="width:50px;"></li>
+            <li class="red"><a href="index.html">Home</a></li>
+            <li class="orange"><a href="about.html">About</a></li>
+            <li class="yellow"><a href="festival.html">Festival</a></li>
+            <li class="lime"><a href="calendar.html">Calendar</a></li>
+            <li class="green"><a href="media.html">Media</a></li>
+            <li class="blue"><a href="resources.html">Resources</a></li>
+            <li class="indigo"><a href="get-involved.html">Get Involved</a></li>
+            <li class="purple"><a href="contact.html">Contact</a></li>
+            <li class="magenta"></li>
         </ul>
     </nav>
     <main>
@@ -66,8 +70,8 @@
             <p>There is free street parking at the StGeorge Pride Festival. Park on any of the streets around Vernon Worthen Park, but be considerate of our neighbors.There is NO PARKING at the Recreation Center across from the park (Parking lot is for Recreation Center visitors only).</p>
         </aside>
     </main>
-    <footer>
-        <div id="footer_nav" class="col-4 footer-col">
+    <footer class="row purple">
+        <div id="footer_nav" class="col6m col4l col4x  footer-col">
             <h4>St George PRIDE 2017</h4>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -80,24 +84,24 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="col4 footer-col" id="social">
+        <div class="col6m col4l col4x footer-col" id="social">
             <h4>Social Media</h4>
             <span class="fa-stack fa-lg">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
             </span>
             <span class="fa-stack fa-lg">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
             </span>
             <span class="fa-stack fa-lg">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
             </span>
             <h4>Fine Print</h4>
             <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
         </div>
-        <div class="col-4 footer-col" id="footer-contact">
+        <div class="col6m col4l col4x footer-col" id="footer-contact">
             <h4>Contact</h4>
             <h5>About Pride</h5>
             <p>Cody Ham, Pride Committee Chairperson

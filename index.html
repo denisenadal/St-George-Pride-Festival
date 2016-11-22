@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>St. George Pride Festival</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/7f62cdf98b.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
 </head>
@@ -18,7 +20,7 @@
     </header>
     <nav id="main_nav" class="magenta">
         <a id="logo" href="index.html"><img src="imgs/logo.png" alt="st george pride festival logo" width="100" height="100"></a>
-        <ul id="nav_links col12 flat" class="col12l flat">
+        <ul id="nav_links" class="flat inner-wrap">
             <li class="red" style="width:50px;"></li>
             <li class="red"><a href="index.html">Home</a></li>
             <li class="orange"><a href="about.html">About</a></li>
@@ -34,8 +36,8 @@
     <main>
         <div class="inner-wrap">
             <section id="highlights" class="row purple-txt">
-                <div class="col12flat center clip" style="left:-1.5rem;">
-                    <h2>Highlights & Activities</h2>
+                <div class="subhead center clip">
+                    <h2 class="em-line">Highlights & Activities</h2>
                 </div>
                 <figure class="col6m col4l col4x featured">
                     <img src="imgs/graphic_icons/love.svg" alt="find love, community and friendship at the st george pride festival">
@@ -69,36 +71,48 @@
                 </figure>
             </section>
         </div>
-        <div class="magenta row">
+        <div class="magenta row clip">
             <section id="benefits" class="inner-wrap">
-                <div class="col12flat center">
+                <div class="col12x center">
                     <h2>How Pride Benefits The Community</h2>
                     <p class="left">The St George Pride Festival is a non-profit event focused on strengthening our community, raising awareness, promoting acceptance and raising money to benefit LGBTQ youth in our community. Last year we had over 1,000 people in attendance and raised over ,000 for the new LGBTQ Resource Center at Dixie State University. All of the money raised went directly to funding scholarships, a reading library and bringing advocates to campus.</p>
                 </div>
             </section>
         </div>
-        <section id="cta" class="col12x">
-            <div class="inner-wrap cta-box yellow-txt" id="volunteers">
-                <h1>Volunteers</h1>
+        <section id="cta" class="row">
+            <a class="full-width cta-box" href="get-involved.html#volunteers">
+                <div class="inner-wrap yellow-txt" id="volunteers">
+                    <h1>Volunteers</h1>
+                </div>
                 <div class="cta-content yellow hidden">
-                    <h2>Volunteer</h2>
-                    <p>Volunteering is a great way to meet new people and get involved in our community. Sign up now!</p>
+                    <div class="inner-wrap">
+                        <h2 class="col6s right">Volunteer</h2>
+                        <p class="col6s">Volunteering is a great way to meet new people and get involved in our community. Sign up now!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="inner-wrap cta-box green-txt right" id="vendors">
-                <h1>Vendors</h1>
+            </a>
+            <a class="full-width cta-box" href="get-involved.html#vendors">
+                <div class="inner-wrap green-txt right" id="vendors">
+                    <h1>Vendors</h1>
+                </div>
                 <div class="cta-content green hidden right">
-                    <h2>Vendors</h2>
-                    <p>Sign up early to reserve your spot ath the 2017 St. George Pride Festival. All vendors are welcome!</p>
+                    <div class="inner-wrap">
+                        <h2 class="col6s right">Vendors</h2>
+                        <p class="col6s">Sign up early to reserve your spot ath the 2017 St. George Pride Festival. All vendors are welcome!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="inner-wrap cta-box indigo-txt" id="donate">
-                <h1>Donate</h1>
+            </a>
+            <a class="full-width cta-box" href="get-involved.html#donate">
+                <div class="inner-wrap indigo-txt" id="donate">
+                    <h1>Donate</h1>
+                </div>
                 <div class="cta-content indigo hidden">
-                    <h2>Donate</h2>
-                    <p>Make your donation early so we can bring you a better event! Or sponsor the event and show your commitment to the LGBTQ community</p>
+                    <div class="inner-wrap">
+                        <h2 class="col4s">Donate</h2>
+                        <p class="col8s">Make your donation early so we can bring you a better event! Or sponsor the event and show your commitment to the LGBTQ community</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </section>
     </main>
     <footer class="row purple">

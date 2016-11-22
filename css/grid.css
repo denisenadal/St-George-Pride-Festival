@@ -10,7 +10,7 @@
 
 .clear{clear:both;}
 
-.hidden{display:none!important;}
+.hidden{display:none;}
 .show{display:block;}
 .clip{overflow-x:hidden;}
 
@@ -26,11 +26,10 @@
 }
 .slim{padding:.5rem;}
 .flat{padding:0;}
-.col12flat{
-	padding:0;
-	margin:1.5rem 3rem;
-	width:calc( 100% - 3rem);
-	overflow-x: hidden;
+.full-width{
+width: 100%;
+padding:0;
+margin:0;
 }
 .inner-wrap > .row:first-child, .inner-wrap + .row{margin-top:0;}
 .col1s{ width:8.33%;}

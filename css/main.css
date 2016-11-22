@@ -5,6 +5,8 @@ margin:0;
 padding:0;
 position:relative;
 box-sizing:border-box;
+margin-block-start: 0em;
+margin-block-end: 0em;
 }
 *:focus{outline:none;}
 
@@ -19,6 +21,7 @@ body,html{
 	line-height: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
     color:rgba(60,49,71,1);
+	overflow-x: hidden;
 }
 
 h1,h2,h3,h4{
@@ -33,8 +36,8 @@ h3{font-size: 1.5rem;line-height: 1.7rem;}
 h4{font-size: 1.3rem;line-height: 1.5rem;}
 h5{font-size: 1.1rem;line-height: 1.3rem;}
 h5:nth-of-type(1n+2){margin-top: 2rem;}
-
-p,figcaption{margin:.5rem auto;}
+p{margin-top:.1rem;}
+figcaption{margin:.5rem auto;}
 
 .red-txt{color:#c01e2d;}
 .orange-txt{color:#ef5923;}
@@ -89,7 +92,7 @@ section h2{
 }
 
 
-section h2::before, .em-line::before{
+.em-line::before{
 	content:"";
 	width:100%;
 	top: 50%;
@@ -107,7 +110,7 @@ section h2::before, .em-line::before{
     }
 
 
-section h2::after, .em-line::after{
+ .em-line::after{
 	content:"";
 	width:999px;
 	top: 50%;
@@ -125,10 +128,15 @@ section h2::after, .em-line::after{
     margin: -.2rem 0 0rem 1rem;
     }
 
-.magenta h2::after, .magenta h2::before{	background-image: repeating-linear-gradient(90deg, #fff, #fff 6px, transparent 6px, transparent 12px);
+.magenta .em-line::after, .magenta .em-line::before{	background-image: repeating-linear-gradient(90deg, #fff, #fff 6px, transparent 6px, transparent 12px);
 }
 
-footer li{list-style: none;}
+footer h4{padding-bottom: .5rem;}
+
+footer li{
+	list-style: none;
+	line-height: 1.5rem;
+}
 footer a {color:#fbb13f;font-weight: bold; }
 .fa-stack:first-of-type > .fa-circle {color: #3B5998;}
 .fa-stack:nth-of-type(2) > .fa-circle{color: #4099FF;}
@@ -161,19 +169,35 @@ footer a {color:#fbb13f;font-weight: bold; }
 	font-size: 3vw;
 	line-height: 3vw;
 }
-#highlights .col12flat{
-	left:-1.5rem;
-	margin: 1.5rem 3rem 0;
+.subhead{
+	width:calc( 100% - 4rem);
+	margin:2rem 1.5rem;
 }
-#highlights h2{ margin: 1rem auto;}
+#highlights h2{ }
 #highlights img{
 	max-width: 60%;
 	margin:2rem 20% 1rem;
 }
-
-
+#cta .full-width{
+	min-height:15vw;
+	cursor: pointer;
+	display:block;
+}
 #cta h1{
-	font-size: 8rem;
-	font-weight: 700;
-	line-height: 6rem;
+	font-size: 15vw;
+    font-weight: 700;
+    line-height: 12vw;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, .3);
+
+}
+#cta h2{font-size: 8vw;line-height: 8vw;}
+.cta-content{
+	width:100vw;
+	height:100%;
+	left:-1.5rem;
+	top:-1.5rem;
+	position: absolute;
+	min-height:17vw;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+
 }
