@@ -5,103 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>St. George Pride Festival</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://use.fontawesome.com/7f62cdf98b.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css" type="text/css">
 </head>
-<body>
+<body id="home">
     <header>
-        <canvas id="header-graphic"></canvas>
+        <div class="inner-wrap">
+            <h1 class="yellow-txt">St George Pride<br> Festival 2017</h1>
+            <h2 class="purple-txt">Saturday<br>June 10,2017<br>Vernon Worthen Park<br>St. George, Utah</h2>
+        </div>
     </header>
-    <nav id="main_nav">
-        <svg id="logo"></svg>
-        <ul id="nav_links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Festival</li>
-            <li>Calendar</li>
-            <li>Media</li>
-            <li>Resources</li>
-            <li>Get Involved</li>
-            <li>Contact</li>
+    <nav id="main_nav" class="magenta">
+        <a id="logo" href="index.html"><img src="imgs/logo.png" alt="st george pride festival logo" width="100" height="100"></a>
+        <ul id="nav_links col12 flat" class="col12l flat">
+            <li class="red" style="width:50px;"></li>
+            <li class="red"><a href="index.html">Home</a></li>
+            <li class="orange"><a href="about.html">About</a></li>
+            <li class="yellow"><a href="festival.html">Festival</a></li>
+            <li class="lime"><a href="calendar.html">Calendar</a></li>
+            <li class="green"><a href="media.html">Media</a></li>
+            <li class="blue"><a href="resources.html">Resources</a></li>
+            <li class="indigo"><a href="get-involved.html">Get Involved</a></li>
+            <li class="purple"><a href="contact.html">Contact</a></li>
+            <li class="magenta"></li>
         </ul>
     </nav>
     <main>
-        <section id="highlights">
-            <figure class="col-4 featured">
-                <h3>Meet The Community</h3>
-                <figcaption>All are welcome; bring your friends, families and allies. The St George Pride Festival is a safe space for you to be yourself.</figcaption>
-            </figure>
-            <figure class="col-4 featured">
-                <h3>Games & Activities</h3>
-                <figcaption>Join us for games and activities in the park. Attendees are encouraged to bring blankets, chairs, board games and card games.</figcaption>
-            </figure>
-            <figure class="col-4 featured">
-                <h3>Live Performances</h3>
-                <figcaption>Local musicians and performers will provide entertainment during the Festival. Also hear keynote speeches by leaders in the local LGBTQ community.</figcaption>
-            </figure>
-            <figure class="col-4 featured">
-                <h3>Food & Drinks</h3>
-                <figcaption>Local food trucks will be on-site so bring some cash if you get hungry.</figcaption>
-            </figure>
-            <figure class="col-4 featured">
-                <h3>Fashion Shows</h3>
-                <figcaption>New to the 2017 Pride Festival are Fashion Shows featuring your most glamours looks!</figcaption>
-            </figure>
-            <figure class="col-4 featured">
-                <h3>Dance Party</h3>
-                <figcaption>Bring your dancing shoes & glow sticks, we’ll be having our first annual Pride Dance Party.</figcaption>
-            </figure>
-        </section>
-        <section id="benefits">
-            <h2>How Pride Benefits The Community</h2>
-            <p>The St George Pride Festival is a non-profit event focused on strengthening our community, raising awareness, promoting acceptance and raising money to benefit LGBTQ youth in our community. Last year we had over 1,000 people in attendance and raised over ,000 for the new LGBTQ Resource Center at Dixie State University. All of the money raised went directly to funding scholarships, a reading library and bringing advocates to campus.</p>
-        </section>
-        <section id="cta">
-            <div class="col-12 cta-box" id="volunteers">
+        <div class="inner-wrap">
+            <section id="highlights" class="row purple-txt">
+                <div class="col12flat center clip" style="left:-1.5rem;">
+                    <h2>Highlights & Activities</h2>
+                </div>
+                <figure class="col6m col4l col4x featured">
+                    <img src="imgs/graphic_icons/love.svg" alt="find love, community and friendship at the st george pride festival">
+                    <h3 class="center">Meet The Community</h3>
+                    <figcaption>All are welcome; bring your friends, families and allies. The St George Pride Festival is a safe space for you to be yourself.</figcaption>
+                </figure>
+                <figure class="col6m col4l col4x  featured">
+                    <img src="imgs/graphic_icons/games.svg" alt="play games and have fun at the st george pride festival">
+                    <h3 class="center">Games & Activities</h3>
+                    <figcaption>Join us for games and activities in the park. Attendees are encouraged to bring blankets, chairs, board games and card games.</figcaption>
+                </figure>
+                <figure class="col6m col4l col4x  featured">
+                    <img src="imgs/graphic_icons/microphone.svg" alt="watch live entertainment at the st george pride festival">
+                    <h3 class="center">Live Performances</h3>
+                    <figcaption>Local musicians and performers will provide entertainment during the Festival. Also hear keynote speeches by leaders in the local LGBTQ community.</figcaption>
+                </figure>
+                <figure class="col6m col4l col4x  featured">
+                    <img src="imgs/graphic_icons/hotdog.svg" alt="food and drinks available at the festival">
+                    <h3 class="center">Food & Drinks</h3>
+                    <figcaption>Local food trucks will be on-site so bring some cash if you get hungry.</figcaption>
+                </figure>
+                <figure class="col6m col4l col4x  featured">
+                    <img src="imgs/graphic_icons/shoe.svg" alt="catch a fashion show or participate in one">
+                    <h3 class="center">Fashion Shows</h3>
+                    <figcaption>New to the 2017 Pride Festival are Fashion Shows featuring your most glamours looks!</figcaption>
+                </figure>
+                <figure class="col6m col4l col4x  featured">
+                    <img src="imgs/graphic_icons/disco.svg" alt="dance your toes off at the Pride dance party">
+                    <h3 class="center">Dance Party</h3>
+                    <figcaption>Bring your dancing shoes & glow sticks, we’ll be having our first annual Pride Dance Party.</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="magenta row">
+            <section id="benefits" class="inner-wrap">
+                <div class="col12flat center">
+                    <h2>How Pride Benefits The Community</h2>
+                    <p class="left">The St George Pride Festival is a non-profit event focused on strengthening our community, raising awareness, promoting acceptance and raising money to benefit LGBTQ youth in our community. Last year we had over 1,000 people in attendance and raised over ,000 for the new LGBTQ Resource Center at Dixie State University. All of the money raised went directly to funding scholarships, a reading library and bringing advocates to campus.</p>
+                </div>
+            </section>
+        </div>
+        <section id="cta" class="col12x">
+            <div class="inner-wrap cta-box yellow-txt" id="volunteers">
                 <h1>Volunteers</h1>
-                <div class="cta-content">
+                <div class="cta-content yellow hidden">
                     <h2>Volunteer</h2>
                     <p>Volunteering is a great way to meet new people and get involved in our community. Sign up now!</p>
                 </div>
             </div>
-            <div class="col-12 cta-box" id="vendors">
+            <div class="inner-wrap cta-box green-txt right" id="vendors">
                 <h1>Vendors</h1>
-                <div class="cta-content">
+                <div class="cta-content green hidden right">
                     <h2>Vendors</h2>
                     <p>Sign up early to reserve your spot ath the 2017 St. George Pride Festival. All vendors are welcome!</p>
                 </div>
             </div>
-            <div class="col-12 cta-box" id="donate">
+            <div class="inner-wrap cta-box indigo-txt" id="donate">
                 <h1>Donate</h1>
-                <div class="cta-content">
+                <div class="cta-content indigo hidden">
                     <h2>Donate</h2>
                     <p>Make your donation early so we can bring you a better event! Or sponsor the event and show your commitment to the LGBTQ community</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div id="footer_nav" class="col-4 footer-col">
+    <footer class="row purple">
+        <div id="footer_nav" class="col6m col4l col4x  footer-col">
             <h4>St George PRIDE 2017</h4>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Festival</li>
-                <li>Calendar</li>
-                <li>Media</li>
-                <li>Resources</li>
-                <li>Get Involved</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="col4 footer-col" id="social">
+        <div class="col6m col4l col4x footer-col" id="social">
             <h4>Social Media</h4>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+            </span>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
+            </span>
             <h4>Fine Print</h4>
             <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
         </div>
-        <div class="col-4 footer-col" id="footer-contact">
+        <div class="col6m col4l col4x footer-col" id="footer-contact">
             <h4>Contact</h4>
             <h5>About Pride</h5>
             <p>Cody Ham, Pride Committee Chairperson

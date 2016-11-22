@@ -1,0 +1,100 @@
+.inner-wrap{
+	width:100%;
+	margin:0 auto;
+}
+.float-right{float:right;}
+.right{text-align: right;}
+.left {text-align: left;}
+.center{text-align: center;}
+.float-left{float:left;}
+
+.clear{clear:both;}
+
+.hidden{display:none!important;}
+.show{display:block;}
+.clip{overflow-x:hidden;}
+
+[class*="col"] {
+	float:left;
+	padding:1.5rem;
+}
+.row{padding:1.5rem;}
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.slim{padding:.5rem;}
+.flat{padding:0;}
+.col12flat{
+	padding:0;
+	margin:1.5rem 3rem;
+	width:calc( 100% - 3rem);
+	overflow-x: hidden;
+}
+.inner-wrap > .row:first-child, .inner-wrap + .row{margin-top:0;}
+.col1s{ width:8.33%;}
+.col2s{ width:16.66%;}
+.col3s{ width:25%;}
+.col4s{ width:33.3%;}
+.col5s{ width:41.66%;}
+.col6s{ width: 50%;}
+.col7s{ width:58.33%;}
+.col8s{ width:66.66%;}
+.col9s{ width:75%;}
+.col10s{ width:83.33%;}
+.col11s{ width:91.66%;}
+.col12s,.col1m, .col2m, .col3m, .col4m, .col5m,
+.col6m,.col7m, .col8m, .col9m, .col10m, .col11m,
+ .col12m,.col1l, .col2l, .col3l, .col4l, .col5l,
+ .col6l,.col7l, .col8l, .col9l, .col10l, .col11l,
+ .col12l,.col1x, .col2x, .col3x, .col4x, .col5x,
+ .col6x,.col7x, .col8x, .col9x, .col10x, .col11x,
+ .col12x{ width:100%;}
+
+@media all and (min-width:768px){
+.inner-wrap{width:768px;}
+.col1m{ width:8.33%;}
+.col2m{ width:16.66%;}
+.col3m{ width:25%;}
+.col4m{ width:33.3%;}
+.col5m{ width:41.66%;}
+.col6m{ width: 50%;}
+.col7m{ width:58.33%;}
+.col8m{ width:66.66%;}
+.col9m{ width:75%;}
+.col10m{ width:83.33%;}
+.col11m{ width:91.66%;}
+.col12m{ width:100%;}
+}
+@media all and (min-width:992px){
+.inner-wrap{width:960px;}
+.col1l{ width:8.33%;}
+.col2l{ width:16.66%;}
+.col3l{ width:25%;}
+.col4l{ width:33.3%;}
+.col5l{ width:41.66%;}
+.col6l{ width: 50%;}
+.col7l{ width:58.33%;}
+.col8l{ width:66.66%;}
+.col9l{ width:75%;}
+.col10l{ width:83.33%;}
+.col11l{ width:91.66%;}
+.col12l{ width:100%;}
+}
+
+@media all and (min-width:1200px){
+.inner-wrap{width:1160px;}
+.col1x{ width:8.33%;}
+.col2x{ width:16.66%;}
+.col3x{ width:25%;}
+.col4x{ width:33.3%;}
+.col5x{ width:41.66%;}
+.col6x{ width: 50%;}
+.col7x{ width:58.33%;}
+.col8x{ width:66.66%;}
+.col9x{ width:75%;}
+.col10x{ width:83.33%;}
+.col11x{ width:91.66%;}
+.col12x{ width:100%;}
+}
