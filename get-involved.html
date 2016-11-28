@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
 </head>
-<body id="home">
+<body id="get-involved">
     <header>
-        <div class="inner-wrap">
-            <h1 class="yellow-txt">St George Pride<br> Festival 2017</h1>
-            <h2 class="purple-txt">Saturday<br>June 10,2017<br>Vernon Worthen Park<br>St. George, Utah</h2>
-        </div>
+    <div id="cta-menu" class="inner-wrap">
+        <ul id="cta-nav" class="float-right">
+            <li><a href="get-involved.html#volunteer-signup">Volunteer</a></li>
+            <li><a href="get-involved.html#vendor-signup">Vendor</a></li>
+            <li><a href="get-involved.html#donate-signup">Donate</a></li>
+        </ul>
+    </div>
     </header>
     <nav id="main_nav" class="magenta">
         <a id="logo" href="index.html"><img src="imgs/logo.png" alt="st george pride festival logo" width="100" height="100"></a>
@@ -34,24 +37,53 @@
         </ul>
     </nav>
     <main>
-        <h1>Get Involved</h1>
-        <div id="involvement-form">
-            <h3>Ready to Help?</h3>
-            <p>I'm</p><input type="text" id="i-name">
-            <p>And I want to</p><input type="text" id="action">
-            <input type="text" id="i-phone" value="Phone Number"><input type="text" id="i-email" value="email address">
-            <input type="submit" id="i-submit" value="submit">
-        </div>
-        <section id="donate" class="col-12 img-box">
-            <div class="col-6 text-box">
-                <p>The St. George Pride Festival is entirely non-profit, with all of our proceeds going directing into the LGBTQ+ community, so we depend on our donors and sponsors to make this event happen. Last year we were able to raise over $2,000 for scholarships and funding for the DSU LGBTQ+ Resource Center. We look forward to being able to raise even more money next year.</p>
-                <p>In order to be able to donate our proceeds, we need help covering the costs of the event. Some of our costs include booking the park and renting A/V equipment. You can contact Cody Ham, chair of the St. George Pride committee, at 818-720-2156 or codymham@gmail.com about how to become a sponsor.</p>
-                <p>As a sponsor you will receive the sincere gratitude of our community, as well as being listed on our program and website as an event sponsor. Sponsoring Pride means supporting the most visible LGBT event in St. George.</p>
+        <div class="inner-wrap">
+            <div id="involvement-form" class="yellow col0s col5m col4l">
+                <h3>Ready to Help?</h3>
+                <div class="col12s flat">
+                    <label>I'm</label>
+                    <span class="input-field"><input type="text" id="i-name" placeholder="First & Last Name"></span>
+                </div>
+                <div class="col12s flat">
+                    <label>And I want to</label>
+                    <span class="input-field select"><select id="action">
+                        <option value="donate">Donate</option>
+                        <option value="sponsor">Sponsor</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="vendor">Vendor</option>
+                    </select></span>
+                </div>
+                <div class="col12s flat">
+                    <span class="input-field"><input type="text" id="i-phone" placeholder="My Phone Number"></span>
+                    <span class="input-field"><input type="text" id="i-email" placeholder="My Email Address"></span>
             </div>
+            <div class="col12s flat">
+                <input type="submit" class="orange" id="i-submit" value="submit">
+            </div>
+        </div><!-- end involvement form-->
+        <div class="row">
+            <h1 class="purple-txt col12s page-header">Get Involved</h1>
+            <div class="subhead center clip">
+                <h2 id="donate-header" class="em-line purple-txt">Donate & Sponsor</h2>
+            </div>
+        </div>
+    </div><!-- end inner-wrap -->
+    <section id="gi-donate" class="row img-box">
+        <div class="col9m col8l white">
+            <p>The St. George Pride Festival is entirely non-profit, with all of our proceeds going directing into the LGBTQ+ community, so we depend on our donors and sponsors to make this event happen. Last year we were able to raise over $2,000 for scholarships and funding for the DSU LGBTQ+ Resource Center. We look forward to being able to raise even more money next year.</p>
+            <p>In order to be able to donate our proceeds, we need help covering the costs of the event. Some of our costs include booking the park and renting A/V equipment. You can contact Cody Ham, chair of the St. George Pride committee, at 818-720-2156 or codymham@gmail.com about how to become a sponsor.</p>
+            <p>As a sponsor you will receive the sincere gratitude of our community, as well as being listed on our program and website as an event sponsor. Sponsoring Pride means supporting the most visible LGBT event in St. George.</p>
+        </div>
         </section>
-        <section id="volunteer" class="col-12 img-box">
-            <h2>Volunteer</h2>
-            <div class="col-4 text-box">
+        <div class="inner-wrap">
+            <div class="row">
+                <div class="subhead center clip white">
+                    <h2 id="volunteer-signup" class="em-line purple-txt">Volunteer</h2>
+                </div>
+            </div>
+        </div>
+        <section id="gi-volunteer" class="row img-box">
+            <div class="col9m col7l white">
                 <p>Volunteering is a great way to get involved in your community and develop leadership skills. You can also meet new people and make friends. Volunteering for Pride also looks greats on resumes. It’s family-friendly, and people of all ages can help.</p>
                 <p>There’s a variety of ways to volunteer for Pride. Here are some of our staffing needs for the event:</p>
                 <ul>
@@ -65,55 +97,68 @@
                 <p><strong>Fill out our form to get started</strong></p>
             </div>
         </section>
-        <section id="vendor" class="col-12 img-box">
-            <h2>Vendors</h2>
-            <div class="col-6 text-box">
+        <div class="inner-wrap">
+            <div class="row">
+                <div class="subhead center clip white">
+                    <h2 id="vendor-signup" class="em-line purple-txt">Vendor</h2>
+                </div>
+            </div>
+        </div>
+        <section id="gi-vendor" class="row img-box">
+            <div class="col8m col6l white">
                 <p>Being a vendor at St. George Pride gives you a great business opportunity. Over a thousand people attended the first Pride in 2016, and we’re anticipating even more people this year! Our attendees will need food, drinks and want to purchase LGBT-gear while at the event. Bringing your business to the St. George Pride is not only a great way to make money, but also to show your values to the community and develop a lasting relationship with local customers.</p>
                 <p><strong>Use out form to sign up as a vendor and reserve your spot at the event</strong></p>
             </div>
         </section>
+        <div class="white" id="gi-buffer">
+
+        </div>
     </main>
-    <footer class="row purple">
-        <div id="footer_nav" class="col6m col4l col4x  footer-col">
-            <h4>St George PRIDE 2017</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="festival.html">Festival</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col6m col4l col4x footer-col" id="social">
-            <h4>Social Media</h4>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <h4>Fine Print</h4>
-            <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
-        </div>
-        <div class="col6m col4l col4x footer-col" id="footer-contact">
-            <h4>Contact</h4>
-            <h5>About Pride</h5>
-            <p>Cody Ham, Pride Committee Chairperson
-                <br>818-720-2156<br>
-                codymham@gmail.com</p>
-            <h5>About the Site</h5>
-            <p>Denise Nadal, Web Developer for St George Pride
-                <br>661-808-0661<br>denisenadal@outlook.com<br>
-                <a href="http://denisenadal.com">http://denisenadal.com</a></p>
+    <footer class="purple">
+        <div class="inner-wrap">
+            <div class="row">
+                <div id="footer_nav" class="col6m col4l col4x  footer-col">
+                    <h4>St George PRIDE 2017</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col6m col4l col4x footer-col" id="social">
+                    <h4>Social Media</h4>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <h4>Fine Print</h4>
+                    <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
+                </div>
+                <div class="col6m col4l col4x footer-col" id="footer-contact">
+                    <h4>Contact</h4>
+                    <h5>About Pride</h5>
+                    <p>Cody Ham, Pride Committee Chairperson
+                        <br>818-720-2156<br>
+                        codymham@gmail.com</p>
+                    <h5>About the Site</h5>
+                    <p>Denise Nadal, Web Developer for St George Pride
+                        <br>661-808-0661<br>denisenadal@outlook.com<br>
+                        <a href="http://denisenadal.com">http://denisenadal.com</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

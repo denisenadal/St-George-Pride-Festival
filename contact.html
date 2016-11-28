@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
 </head>
-<body id="home">
+<body id="contact">
     <header>
-        <div class="inner-wrap">
-            <h1 class="yellow-txt">St George Pride<br> Festival 2017</h1>
-            <h2 class="purple-txt">Saturday<br>June 10,2017<br>Vernon Worthen Park<br>St. George, Utah</h2>
-        </div>
+    <div id="cta-menu" class="inner-wrap">
+        <ul id="cta-nav" class="float-right">
+            <li><a href="get-involved.html#volunteer-signup">Volunteer</a></li>
+            <li><a href="get-involved.html#vendor-signup">Vendor</a></li>
+            <li><a href="get-involved.html#donate-signup">Donate</a></li>
+        </ul>
+    </div>
     </header>
     <nav id="main_nav" class="magenta">
         <a id="logo" href="index.html"><img src="imgs/logo.png" alt="st george pride festival logo" width="100" height="100"></a>
@@ -33,68 +36,90 @@
             <li class="magenta"></li>
         </ul>
     </nav>
-    <main>
-        <div class="col-12" id="contact">
-            <h1>Talk to Us...</h1>
-            <img src="imgs/flicker_torbakhopper03.jpg" alt="LGBT PRide Flags waving">
-            <div id="contact-form">
-                <label for="name">Name:</label><input type="text" id="name">
-                <label for="phone">Phone:</label><input type="tel" id="phone">
-                <label for="email">Email:</label><input type="email" id="email">
-                <label for="subject">Subject:</label><input type="text" id="subject">
-                <label for="message">Message:</label>
-                <textara></textara>
-                <input type="submit" id="send" value="submit">
+    <main class="inner-wrap">
+        <div class="row">
+            <h1 class="right blue-txt col12s page-header">Talk to Us...</h1>
+            <img src="imgs/stock/flicker_torbakhopper03.jpg" alt="LGBT Pride Flags waving" class="col0s col5l flat-top">
+            <div id="contact-form" class="lime col12s col7l">
+                <div class="col6m flat">
+                    <label for="name" class="orange-txt">Name:</label>
+                    <span class="input-field"><input type="text" id="name"></span>
+                </div>
+                <div class="col6m flat">
+                    <label for="phone" class="orange-txt">Phone:</label>
+                    <span class="input-field"><input type="tel" id="phone"></span>
+                </div>
+                <div class="col12s flat">
+                    <label for="email" class="orange-txt">Email:</label>
+                    <span class="input-field"><input type="email" id="email"></span>
+                </div>
+                <div class="col12s flat">
+                    <label for="subject" class="orange-txt">Subject:</label>
+                    <span class="input-field"><input type="text" id="subject"></span>
+                </div>
+                <div class="col12s flat">
+                    <label for="message" class="orange-txt">Message:</label>
+                </div>
+                <div class="col12s flat">
+                    <span class="input-field"><textarea></textarea></span>
+                </div>
+                <div class="col12s flat">
+                    <input type="submit" class="orange center" id="send" value="submit">
+                </div>
             </div>
-            <div id="contact-person">
-                <h2>Contact</h2>
+            <div id="contact-person" class="green col8m col6l">
+                <h2 class="purple-txt">Contact</h2>
                 <h3>Cody Ham</h3>
                 <p>St George Pride Festival Charperson<br>
                     818-720-2156 | codymham@gmail.com</p>
             </div>
         </div>
     </main>
-    <footer class="row purple">
-        <div id="footer_nav" class="col6m col4l col4x  footer-col">
-            <h4>St George PRIDE 2017</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="festival.html">Festival</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col6m col4l col4x footer-col" id="social">
-            <h4>Social Media</h4>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
-            </span>
-            <h4>Fine Print</h4>
-            <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
-        </div>
-        <div class="col6m col4l col4x footer-col" id="footer-contact">
-            <h4>Contact</h4>
-            <h5>About Pride</h5>
-            <p>Cody Ham, Pride Committee Chairperson
-                <br>818-720-2156<br>
-                codymham@gmail.com</p>
-            <h5>About the Site</h5>
-            <p>Denise Nadal, Web Developer for St George Pride
-                <br>661-808-0661<br>denisenadal@outlook.com<br>
-                <a href="http://denisenadal.com">http://denisenadal.com</a></p>
+    <footer class="purple">
+        <div class="inner-wrap">
+            <div class="row">
+                <div id="footer_nav" class="col6m col4l col4x  footer-col">
+                    <h4>St George PRIDE 2017</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col6m col4l col4x footer-col" id="social">
+                    <h4>Social Media</h4>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <h4>Fine Print</h4>
+                    <p>All content copyright 2016 by the St George Pride Festival unless otherwise indicated.</p>
+                </div>
+                <div class="col6m col4l col4x footer-col" id="footer-contact">
+                    <h4>Contact</h4>
+                    <h5>About Pride</h5>
+                    <p>Cody Ham, Pride Committee Chairperson
+                        <br>818-720-2156<br>
+                        codymham@gmail.com</p>
+                    <h5>About the Site</h5>
+                    <p>Denise Nadal, Web Developer for St George Pride
+                        <br>661-808-0661<br>denisenadal@outlook.com<br>
+                        <a href="http://denisenadal.com">http://denisenadal.com</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
