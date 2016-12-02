@@ -91,6 +91,9 @@ header{
 header ul{
 	padding-top: 1rem;
 	display: inline-block;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
 }
 #cta-nav li a,#cta-nav li a:hover{
 	display: block;
@@ -101,20 +104,34 @@ header ul{
 
 }
 
+/*============= Mobile Nav =================*/
+#logo-wrap{
+    width: 100%;
+}
 #logo{
-    position: absolute;
-    top:-30px;
-    left:1rem;
     z-index: 2;
-	color:#fff;}
-
-nav ul, header ul{
+    color: #fff;
+    height: 75px;
+    padding: 0;
+    text-align: center;
+}
+nav ul{
     display: flex;
+    flex-flow: column nowrap;
     list-style-type: none;
 }
+#main_nav{
+    width: 50%;
+    position: fixed;
+    left: 10vw;
+    top:10vh;
+    z-index: 5;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+}
+@media all and (max-width:899px){#navlinks{width:100%;}}
 #main_nav li{
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
 }
 nav li a{
 	display:block;
@@ -125,44 +142,76 @@ nav li a{
     text-transform: uppercase;
 	border-bottom: none;
 	font-weight:300;
-	padding: .5rem;
+	padding: .75rem .75rem .75rem 1.25rem;
 	transition: none;
 }
-nav li:hover a, header li:hover a{
-	background: #fff;
-	color:#000;
-	z-index: 2;
-}
-nav li::before,header li::before,nav li::after,header li::after{
-	opacity: 0;
-	transition: 2s all ease-in;
-}
-nav li:hover::before,header li:hover::before{
-	opacity: 1;
-	content: "";
-	position: absolute;
-	width: calc( 100% + .4rem);
-	height:calc( 100% + .4rem);
-	top: -.4rem;
-	left: -.4rem;
-	background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,.5) 3px, rgba(0,0,0,1) 6px);
-	z-index: 1;
-}
-nav li:hover::after,header li:hover::after{
-	opacity: 1;
-	content: "";
-	position: absolute;
-	width: calc( 100% + .4rem);
-	height:calc( 100% + .4rem);
-	top: 0;
-	left: 0;
-	background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,.5) 3px, rgba(0,0,0,1) 6px);
-	z-index: 1;
-}
-nav li:hover + li{z-index: 0;}
-nav li:first-of-type:hover::after,nav li:first-of-type:hover::before{content:none;}
-nav li:last-of-type:hover::after,nav li:last-of-type:hover::before{content:none;}
 
+/*======= DESKTOP MENU  ================= */
+@media all and (min-width:900px){
+    #logo-wrap{
+        width: 100px;
+    }
+    #logo{
+        position: absolute;
+        top: -35px;
+        left:0;
+        z-index: 2;
+        color: #fff;
+        height: 100%;
+        padding: 0;
+    }
+
+    #logo-wrap:hover{background:#c01e2d;}
+    #logo:hover{background:none;}
+    #main_nav{
+        width: 100%;
+        position: relative;
+        top:0; left: 0;
+        box-shadow: none;
+        }
+    #main_nav li{
+        text-align: center;
+    }
+    nav ul{flex-flow: row nowrap;}
+    nav li a {	padding: .5rem;}
+    nav li:hover a, header li:hover a{
+    	background: #fff;
+    	color:#000;
+    	z-index: 2;
+    }
+    nav li::before,header li::before,nav li::after,header li::after{
+    	opacity: 0;
+    }
+    nav li:hover::before,header li:hover::before{
+    	opacity: 1;
+    	content: "";
+    	position: absolute;
+    	width: calc( 100% + .4rem);
+    	height:calc( 100% + .4rem);
+    	top: -.4rem;
+    	left: -.4rem;
+    	background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,.5) 3px, rgba(0,0,0,1) 6px);
+    	z-index: 1;
+    }
+    nav li:hover::after,header li:hover::after{
+    	opacity: 1;
+    	content: "";
+    	position: absolute;
+    	width: calc( 100% + .4rem);
+    	height:calc( 100% + .4rem);
+    	top: 0;
+    	left: 0;
+    	background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,.5) 3px, rgba(0,0,0,1) 6px);
+    	z-index: 1;
+    }
+    nav li:hover + li{z-index: 0;}
+    nav li:first-of-type:hover::after,nav li:first-of-type:hover::before{content:none;}
+    nav li:last-of-type:hover::after,nav li:last-of-type:hover::before{content:none;}
+
+}
+@media all and (min-width:900px) and (max-width:1000px){
+    nav ul#navlinks.inner-wrap{width:100%;}
+}
 /*====================  MAIN CONTENT AREA  ======================*/
 
 

@@ -12,7 +12,7 @@
 
 .hidden{display:none;}
 .show{display:block;}
-.clip{overflow-x:hidden; overflow-y:visible;}
+.clip{overflow-x:hidden; overflow-y:hidden;}
 
 [class*="col"] {
 	float:left;
